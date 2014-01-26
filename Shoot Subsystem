@@ -1,0 +1,28 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.wpi.first.wpilibj.templates.subsystems;
+
+import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.templates.RobotMap;
+/**
+ *
+ * @author Owner
+ */
+public class ShootSubsystem extends Subsystem {
+    
+    public DoubleSolenoid ShootMecahnism () {
+     DoubleSolenoid shootSolenoid = new DoubleSolenoid (RobotMap.SHOOTER_DEPLOY_ONE , RobotMap.SHOOTER_DEPLOY_TWO);
+     return shootSolenoid;
+    }
+        
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
+
+    public void initDefaultCommand() {
+        // Set the default command for a subsystem here.
+        //setDefaultCommand(new MySpecialCommand());
+    }
+}
